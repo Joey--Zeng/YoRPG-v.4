@@ -12,4 +12,8 @@ public class Monster extends Character{
 	defense = 20;
 	attack = 1;
     }
+    
+    public String about(){
+    	return "Creature ready to be killed.";
+    }
 }
