@@ -15,4 +15,18 @@ public class Warrior extends Character{
 	this();
 	name = x;
     } 
+    
+    
+    public void specialize(){
+        attack = .75;
+        defense = 20;
+    }
+    
+    public void normalize(){
+        attack = .4;
+        defense = 40;
+    }
+    
+    
+    
 }
