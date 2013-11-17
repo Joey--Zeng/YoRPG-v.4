@@ -28,7 +28,7 @@ public class Warrior extends Character{
     }
     
     public String about(){
-    	return "A Warrior is a mighty warrior that swings his sword."
+    	return "A Warrior is a mighty warrior that swings his sword.";
     }
     
 }
