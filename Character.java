@@ -9,6 +9,7 @@ public abstract class Character {
     protected int strength;
     protected int defense;
     protected double attack;
+    protected boolean isSpecialized;
     
     public Character(){
 	name = "Bob";
@@ -36,13 +37,20 @@ public abstract class Character {
 	return damage;
     }
     public void specialize(){
-	attack = .75;
-	defense = 20;
+    	if (!isSpecialized){
+    		attack *=2;
+    		defense /=2;
+    	}
+    	isSpecialized = true;
     }
     public void normalize(){
-	attack = .4;
-	defense = 40;
+	if(isSpecialized){
+		attack /=2;
+		defense *=2;
+	}
+	isSpecialized = false;
     }
+	
     public String getName(){
 	return name;
     }
