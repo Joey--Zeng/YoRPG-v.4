@@ -48,5 +48,5 @@ public abstract class Character {
     }
     public static String about(){
 	return "A Warrior is a mighty warrior that swings his sword. \n A Mage is an intellectual being that casts spells and places wards";
-	
+    }
 }
