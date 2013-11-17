@@ -1,7 +1,7 @@
-//Vincent Ou
+//Vincent Ou, Joey Zeng, Anna Qu
 //pd 9
-//2013-11-14
-//HW#25
+//2013-11-18
+//HW#26
 
 public abstract class Character {
     protected String name;
