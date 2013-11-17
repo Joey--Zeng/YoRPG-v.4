@@ -17,7 +17,6 @@ public abstract class Character {
 	strength = 100;
 	defense = 40;
 	attack = .4;
-	isSpeialized = false;
     }
     public boolean isAlive(){
 	return health > 0;
