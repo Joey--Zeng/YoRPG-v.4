@@ -20,15 +20,7 @@ public class Rogue extends Character{
       name = a;
   }
   
-  public void specialize(){
-      attack = 3.2;
-      defense = 50;
-  }
-  
-  public void normalize(){
-      attack = 1.8;
-      defense = 100;
-  }
+
   
   public String about(){
 	  return "A Rogue is a speedy fighter who can reliably deal and avoid damage, but is easily killed.";
