@@ -10,6 +10,7 @@ public class Mage extends Character{
 	strength = 150;
 	defense = 25;
 	attack = 0.6;
+	isSpecialized = false;
     }
     public Mage(String x){
 	this();
