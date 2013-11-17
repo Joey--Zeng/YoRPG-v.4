@@ -27,6 +27,8 @@ public class Warrior extends Character{
         defense = 40;
     }
     
-    
+    public String about(){
+    	return "A Warrior is a mighty warrior that swings his sword."
+    }
     
 }
