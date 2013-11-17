@@ -30,6 +30,8 @@ public class Rogue extends Character{
       defense = 100;
   }
   
- 
+  public String about(){
+	  return "A Rogue is a speedy fighter who can reliably deal and avoid damage, but is easily killed.";
+  }
   
 }
