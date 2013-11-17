@@ -16,4 +16,7 @@ public class Mage extends Character{
 	name = x;
     }
     
+    public String about(){
+    	return "A Mage is an intellectual being that casts spells and places wards";
+    }
 }
