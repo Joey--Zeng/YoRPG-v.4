@@ -20,7 +20,7 @@ public class YoRPG {
     public final static int MAX_ENCOUNTERS = 5;
 
     //each round, a Warrior and a Monster will be instantiated
-    private Warrior pat;   //Is it man or woman?
+    private Character pat;   //Is it man or woman?
     private Monster smaug; //Friendly generic monster name, eh?
 
     private int moveCount;
@@ -79,7 +79,22 @@ public class YoRPG {
 
 
 	//instantiate the player's character
-	pat = new Warrior( name );
+	System.out.print("Choose your job: \n\t1: Warrior\n\t2: Mage\n\t3: Rogue\n\t4: Archer\n\t5: Pirate\nSelection:");
+	try {
+	    choice = Integer.parseInt(in.readLine()) ;
+	}
+	catch ( IOException e ) {}
+
+	if (choice == 1)
+	    pat = new Warrior( name );
+	else if (choice == 2)
+	    pat = new Mage( name );
+	else if (choice == 3)
+	    pat = new Rogue( name );
+	else if (choice == 4)
+	    pat = new Archer( name );
+	else if (choice == 5)
+	    pat = new Pirate( name );
 
     }//end newGame()
 
